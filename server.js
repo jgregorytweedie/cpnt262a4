@@ -6,12 +6,12 @@ require("dotenv").config();
 
 // time to set my view engine!!!
 
-app.request("view engine", "ejs");
+app.set("view engine", "ejs");
 // this here will render my static files with express.
-app.request(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 // parsing requests
-app.request(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 //this is my index page endpoint. 
 // I tend to forget this: req, res means request and response. This is how computers talk to each other, sending requests and responses.
