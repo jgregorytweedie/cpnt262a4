@@ -1,5 +1,6 @@
 const app = require("express");
 const ejs = require("ejs");
+const naturePhotos = require("./naturePhotos");
 require("dotenv").config();
 //requiring all the dependencies, and modules here^
 
@@ -40,4 +41,27 @@ app.get("/subscribe", (req, res) => {
         current: "page-subscribe",
         tagline: "Subscribe here"
     });
+}); 
+
+// this will be my JSON endpoint.
+app.get("/api/gallery", (req, res) => {
+    res.json(nature);
+});
+app.post("/peoples", (req, res) => {
+    res.send(`<p> Thank you, We will send you copies of our nature blogs to your email.</p>`);
+}); 
+
+// If anyone puts in a wrong endpoint, or if anything wrong happens, this code will show an error 404
+app.use(function(req, res) {
+    res.status(404);
+    res.send("404: File not Found");
+});
+
+// I wanna set a PORT variable with the port 3000.
+// definitely learned my mistake with making sure to capitalize PORT... hahahaaha....
+const PORT = process.env.PORT || 3000;
+
+// Listen on PORT and console.log PORT value
+app.listen(PORT, function(){
+    console.log(`Listening on port ${PORT}`);
 });
