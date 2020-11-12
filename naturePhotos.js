@@ -3,31 +3,31 @@ const naturePhotos = [
     {
         title: "photo1",
         description: "This one is very neat",
-        credit: "",
+        credit: "https://unsplash.com/photos/MF16lGb95WY",
         image_path: ""
     },
     {
         title: "photo2",
         description: "Neater",
-        credit: "",
+        credit: "https://unsplash.com/photos/DuiPYwz3CBA",
         image_path: "",
     },
     {
         title: "photo3",
         description: "Neatest",
-        credit: "",
+        credit: "https://unsplash.com/photos/o_-gToPk62c",
         image_path: "",
     },
     {
         title: "photo4",
         description: "Neatester",
-        credit: "",
+        credit: "https://unsplash.com/photos/zwzeorQPepo",
         image_path: "",
     },
     {
         title: "photo5",
         description: "Neatesterest",
-        credit: "",
+        credit: "https://unsplash.com/photos/EKLr56NaJDw",
         image_path: "",
     },
 ]
