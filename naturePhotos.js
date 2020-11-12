@@ -20,7 +20,7 @@ const naturePhotos = [
     },
     {
         title: "photo4",
-        description: "Neatester"
+        description: "Neatester",
         credit: "",
         image_path: "",
     },
