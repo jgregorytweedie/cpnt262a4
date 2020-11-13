@@ -44,8 +44,8 @@ app.get("/subscribe", (req, res) => {
 }); 
 
 // this will be my JSON endpoint.
-app.get("/api/v0/gallery", (req, res) => {
-    res.json(naturePhotos);
+app.get("/api/gallery", (req, res) => {
+    res.json(nature);
 });
 app.post("/peoples", (req, res) => {
     res.send(`<p> Thank you, We will send you copies of our nature blogs to your email.</p>`);
