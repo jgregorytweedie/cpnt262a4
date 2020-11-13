@@ -1,5 +1,6 @@
 const app = require("express");
 const ejs = require("ejs");
+const path = require("path");
 const naturePhotos = require("./naturePhotos");
 require("dotenv").config();
 //requiring all the dependencies, and modules here^
